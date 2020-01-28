@@ -1,0 +1,38 @@
+{
+  "name": "Enter Excel Range into Application",
+  "description": "Enter the contents of each row in an Excel range into another application",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.8.1-alpha.717583]",
+    "UiPath.Mail.Activities": "[1.8.1-alpha.717556]",
+    "UiPath.System.Activities": "[19.12.0-preview]",
+    "UiPath.UIAutomationX.Activities": "[2.0.0-alpha.718550]",
+    "UiPath.Word.Activities": "[1.4.0-alpha.717542]"
+  },
+  "webServices": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "19.13.0.200",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Business",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfos": []
+  },
+  "expressionLanguage": "VisualBasic"
+}
