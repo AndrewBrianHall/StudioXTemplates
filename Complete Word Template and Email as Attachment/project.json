@@ -1,6 +1,6 @@
 {
-  "name": "Complete Word Template and Email as Attachment",
-  "description": "Replaces placeholder text in a word document and sends as an email attachment",
+  "name": "Complete Word Template From Excel and Email",
+  "description": "Replaces placeholder text in a word document with values from an Excel range and sends as an email attachment",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.8.1-alpha.738541]",
