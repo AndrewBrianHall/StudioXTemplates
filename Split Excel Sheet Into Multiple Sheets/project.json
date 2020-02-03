@@ -1,6 +1,6 @@
 {
   "name": "Split Excel Sheet Into Multiple Sheets",
-  "description": "Processes an Excel sheet line by line and moves data to different sheets depending on type",
+  "description": "Copies rows from an Excel spreadsheet into different sheets depending on the data type in each row",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.ComplexScenarios.Activities": "[1.0.0-alpha.734356]",
