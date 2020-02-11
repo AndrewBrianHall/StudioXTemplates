@@ -1,17 +1,18 @@
 {
-  "name": "Complete Word Template From Excel and Email",
-  "description": "Replaces placeholder text in a word document with values from an Excel range and sends as an email attachment",
+  "name": "Complete Word Template from Excel and Email",
+  "description": "Creates a copy of a word file for each recipient in an Excel sheet and emails it to them",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.8.1-alpha.738541]",
-    "UiPath.Mail.Activities": "[1.8.1-alpha.738541]",
-    "UiPath.System.Activities": "[20.2.0-alpha.738541]",
-    "UiPath.UIAutomationX.Activities": "[2.0.0-alpha.735245]",
-    "UiPath.Word.Activities": "[1.4.0-alpha.731239]"
+    "UiPath.ComplexScenarios.Activities": "[1.0.0-beta.751974]",
+    "UiPath.Excel.Activities": "[2.8.1-beta.753242]",
+    "UiPath.Mail.Activities": "[1.8.1-beta.753077]",
+    "UiPath.System.Activities": "[20.2.0-beta.752105]",
+    "UiPath.UIAutomationX.Activities": "[2.0.0-beta.752730]",
+    "UiPath.Word.Activities": "[1.4.0-beta.746355]"
   },
   "webServices": [],
   "schemaVersion": "4.0",
-  "studioVersion": "19.13.0.200",
+  "studioVersion": "20.2.0.44",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
@@ -32,7 +33,7 @@
       "includeOriginalXaml": false,
       "privateWorkflows": []
     },
-    "fileInfos": []
+    "fileInfoCollection": []
   },
   "expressionLanguage": "VisualBasic"
 }
