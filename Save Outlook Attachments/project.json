@@ -1,39 +1,39 @@
 {
-  "name": "SaveOutlookAttachments6",
-  "description": "Save email attachments from Outlook to a folder",
-  "main": "Main.xaml",
-  "dependencies": {
-    "UiPath.ComplexScenarios.Activities": "[1.0.0-preview]",
-    "UiPath.Excel.Activities": "[2.8.2-alpha.790916]",
-    "UiPath.Mail.Activities": "[1.8.7359.30183]",
-    "UiPath.System.Activities": "[20.3.0-alpha.790916]",
-    "UiPath.UIAutomationX.Activities": "[2.1.0-alpha.775862]",
-    "UiPath.Word.Activities": "[1.5.0-beta.746347]"
-  },
-  "webServices": [],
-  "schemaVersion": "4.0",
-  "studioVersion": "20.3.0.104",
-  "projectVersion": "1.0.0",
-  "runtimeOptions": {
-    "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
-    "autoDispose": false,
-    "isPausable": true,
-    "requiresUserInteraction": true,
-    "supportsPersistence": false,
-    "excludedLoggedData": [
-      "Private:*",
-      "*password*"
-    ],
-    "executionType": "Workflow"
-  },
-  "designOptions": {
-    "projectProfile": "Business",
-    "outputType": "Process",
-    "libraryOptions": {
-      "includeOriginalXaml": false,
-      "privateWorkflows": []
+    "name": "Save Outlook Attachments",
+    "description": "Save email attachments from Outlook to a folder",
+    "main": "Main.xaml",
+    "dependencies": {
+        "UiPath.ComplexScenarios.Activities": "[1.0.0-preview]",
+        "UiPath.Excel.Activities": "[2.8.2-alpha.790916]",
+        "UiPath.Mail.Activities": "[1.8.7359.30183]",
+        "UiPath.System.Activities": "[20.3.0-alpha.790916]",
+        "UiPath.UIAutomationX.Activities": "[2.1.0-alpha.775862]",
+        "UiPath.Word.Activities": "[1.5.0-beta.746347]"
     },
-    "fileInfoCollection": []
-  },
-  "expressionLanguage": "VisualBasic"
+    "webServices": [],
+    "schemaVersion": "4.0",
+    "studioVersion": "20.3.0.104",
+    "projectVersion": "1.0.0",
+    "runtimeOptions": {
+        "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
+        "autoDispose": false,
+        "isPausable": true,
+        "requiresUserInteraction": true,
+        "supportsPersistence": false,
+        "excludedLoggedData": [
+            "Private:*",
+            "*password*"
+        ],
+        "executionType": "Workflow"
+    },
+    "designOptions": {
+        "projectProfile": "Business",
+        "outputType": "Process",
+        "libraryOptions": {
+            "includeOriginalXaml": false,
+            "privateWorkflows": []
+        },
+        "fileInfoCollection": []
+    },
+    "expressionLanguage": "VisualBasic"
 }
