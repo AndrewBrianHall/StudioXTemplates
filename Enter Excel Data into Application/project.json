@@ -7,7 +7,7 @@
     "UiPath.Excel.Activities": "[2.8.1-beta.753242]",
     "UiPath.Mail.Activities": "[1.8.1-beta.753077]",
     "UiPath.System.Activities": "[20.2.0-beta.752105]",
-    "UiPath.UIAutomationX.Activities": "[2.0.0-beta.752730]",
+    "UiPath.UIAutomationNext.Activities": "[2.0.1-preview]",
     "UiPath.Word.Activities": "[1.4.0-beta.746355]"
   },
   "webServices": [],
