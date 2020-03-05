@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="542.4,3004" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ueabf="clr-namespace:UiPath.Excel.Activities.Business.Filter;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1268.8,3048.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ueabf="clr-namespace:UiPath.Excel.Activities.Business.Filter;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -188,13 +188,7 @@
                         </ueabf:FilterArgument>
                       </ueab:FilterX.FilterArgument>
                     </ueab:FilterX>
-                    <ueab:CopyPasteRangeX sap2010:Annotation.AnnotationText="" DestinationRange="[OutputExcel.Sheet(&quot;Germany&quot;)]" DisplayName="Copy Paste Range" sap:VirtualizedContainerService.HintSize="418.4,214.4" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_5" PasteOptions="All" SourceRange="[ExcelInput.Sheet(&quot;Sheet1&quot;)]" Transpose="False">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ueab:CopyPasteRangeX>
+                    <ueab:CopyPasteRangeX DestinationRange="[OutputExcel.Sheet(&quot;Germany&quot;)]" DisplayName="Copy Paste Range" sap:VirtualizedContainerService.HintSize="418.4,214.4" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_5" PasteOptions="All" SourceRange="[ExcelInput.Sheet(&quot;Sheet1&quot;)]" Transpose="False" />
                     <ueab:InsertSheetX DisplayName="Insert Sheet" sap:VirtualizedContainerService.HintSize="418.4,140" sap2010:WorkflowViewState.IdRef="InsertSheetX_3" Name="USA" Workbook="[OutputExcel]" />
                     <ueab:FilterX ClearFilter="False" ColumnName="Country" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="418.4,172.8" sap2010:WorkflowViewState.IdRef="FilterX_3" Range="[ExcelInput.Sheet(&quot;Sheet1&quot;)]">
                       <ueab:FilterX.FilterArgument>
@@ -229,13 +223,7 @@
                         </ueabf:FilterArgument>
                       </ueab:FilterX.FilterArgument>
                     </ueab:FilterX>
-                    <ueab:CopyPasteRangeX sap2010:Annotation.AnnotationText="" DestinationRange="[OutputExcel.Sheet(&quot;USA&quot;)]" DisplayName="Copy Paste Range" sap:VirtualizedContainerService.HintSize="418.4,214.4" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_6" PasteOptions="All" SourceRange="[ExcelInput.Sheet(&quot;Sheet1&quot;)]" Transpose="False">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ueab:CopyPasteRangeX>
+                    <ueab:CopyPasteRangeX DestinationRange="[OutputExcel.Sheet(&quot;USA&quot;)]" DisplayName="Copy Paste Range" sap:VirtualizedContainerService.HintSize="418.4,214.4" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_6" PasteOptions="All" SourceRange="[ExcelInput.Sheet(&quot;Sheet1&quot;)]" Transpose="False" />
                   </Sequence>
                 </ActivityAction>
               </ueab:ExcelApplicationCard.Body>
