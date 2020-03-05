@@ -1,0 +1,125 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1268.8,1151.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.UiAutomationX.Enums</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationX</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="481.6,1086.4" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=True,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Excel" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:ApplicationCard CloseMode="Never" DisplayName="Use Browser IE: React App" sap:VirtualizedContainerService.HintSize="459.2,820" sap2010:WorkflowViewState.IdRef="ApplicationCard_1" OpenMode="IfNotOpen">
+      <uix:ApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="440.8,626.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:GetLastDownloadedFile Timeout="{x:Null}" DisplayName="Download File" DownloadFolder="[string.Format(&quot;{0}\Downloads&quot;, Environment.GetFolderPath(Environment.SpecialFolder.UserProfile))]" File="[Saved.Values(Of FileInfo)(&quot;Downloaded suppliers CSV&quot;)]" sap:VirtualizedContainerService.HintSize="418.4,556" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+              <ui:GetLastDownloadedFile.Body>
+                <ActivityAction>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="340.8,345.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:Click ClickType="Single" DisplayName="Click 'Export CSV'" sap:VirtualizedContainerService.HintSize="318.4,117.6" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="Left">
+                      <uix:Click.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="2228, 390, 127, 45" ElementType="Text" FriendlyName="'Export CSV'" FullSelector="&lt;html title='React App' /&gt;&lt;webctrl tag='A' /&gt;" FuzzySelector="&lt;html title='React App' /&gt;&lt;webctrl tag='A' type='' aaname='Export CSV' check:text='Export CSV' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIMAAAAxCAYAAAD5nxoYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASBSURBVHhe7ZwxaxVBFIX1B1jY2tnYiz9A7G0sLS0EO4mNhaCI2BlsBAsFBSsFsUipIIJYmloRJMagRkMIEoJYjHybdyb33cxu9uUl68u++8HlZXfvzs7cc2ZmIbCHUhAMCDMEmaIZXn/YSOfu/0gnby2lw5c+R/Qojl9brLSdX/wzUHuLbWa4+2otHZ1ZqG7gb4wR0Z949O53uvD4Z2UM9LUMmQG3YIQX8+uDM0FfwRgYwq4QQ2ZgNcA1wXSA1mguhszAfsIyEkwH7ADsBGLIDCwbLB/BdKCtQoQZppgwQ5AJMwSZMEOQCTMEmTBDkAkzBJkwQ5AJMwSZMEOQ6cwMtFUXJ65/HWT1ixtzq+n0nW/p2NUveZxXnq2kT8t/BxmbvPm4kc7e+57zjlxeqI4fvt38v9D5B8vV+YtPflXHntmXa9V1njUOnZuBAZZi0nn+fj2dur1UCdwGxGS8ugfB7DmBERCfQHRqgWFkDN3r77PILG37VkfnZvCz4qCASPSfwu+ExEF8P16EteZXLgawcB/i6n7MUlc/GQdjjUOYoSVtzcD4yEOgNuIw28nHJE2wBZTyeAbn61aNUZgoM7AnkmMLTj6FZWaouOSw/yIQRdKs4W+Wcw9t2D2Z39L+q3ZpQ8W39/kojYXZzDXua4NWhp3ErGtX5+veJ0Zh4lYGxCBPosogdhlVWwTFxBTKI+yM5HkyCzkyEMf+xZVz5BIUnVmoZZ1jrvPLMVEai8Rtu3/TV/VPBi/Bs8jBmBaNpTQJRqVzM6i4Niwck8dMkZAUyRZebfl7ZQgKJCSinzkqYslkpa1AbZeuWdou+xaE1CQgGHPJTMqxZicXg5SMOSqdm6EUfiASsK6wdfdp/6RAwHUd+1wE4JqdaWrXFlvspxkEBtD9hCaEwLicl4E1Buq1F3RuBi9KCYlI2Fkumtqy17TK+O1A+Hb8saWtGUbdJkrQb72nWKElvmqiPu3GeCUm0gwSkSgJ2dSWvfY/zKDZO+5slfCEBZNo5WPlKK16u2UizcCACW0XfpbVtaUCSnyuK9djc9WOckt9bGsGu1W1GWsTpf5o5VH/McReMXFmUNGZYeRSVF9YteX39tJLoQxFu5amF8hSH0eZ8RKstMVhbGsozOj7BlrV/HsDWwLnuY9f2/9x6dwMDIaB+gDERXhbgJIIaotcrtOmxLUzHfibPK4hAs9Sri+02rXnhF22EZTnlvKA87RNLv0hnz7KmJxjrIREZSWkTfqHOTQJVBuL+kH4CTEOnZuhLiigRPIvRCqYCqN7KLKu8UsRS8WhbYTQS5lyvZhqt05knmfb8P30kI8pZEb+RnDfR/IYu9rWFokBS9QZf1w6M8NeQr+IvSxEEGYIDGGGIBNmCDIH0gzB/hBmCDJhhiATZggyYYYgE2YIMo1m4JtO/nNwQX9p/KYTX/+Kr71NDzfnVtOZ2a3/tA6ZQctGbBX9R6uC/ebnkBkAt2CImacrVSLGiOhPoCnaYgR+LdvMAHw1lOUDU0T0KzAB2toVQRTNEEwnYYZgQEr/AKTjYCeeT8ZBAAAAAElFTkSuQmCC" InformativeScreenshot="d7b866db5d0039c667df3de6f117674a.png" SearchSteps="Selector, FuzzySelector, Image, TextFindAll" Text="Export CSV" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='A' type='' /&gt;">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="2091, 400, 111, 25" ElementType="Text" FriendlyName="'New Supplier'" FullSelector="&lt;html title='React App' /&gt;&lt;webctrl aaname='New Supplier' parentid='controlWrapper' tag='SPAN' /&gt;" FuzzySelector="&lt;html title='React App' /&gt;&lt;webctrl aaname='New Supplier' parentid='controlWrapper' tag='SPAN' type='' check:text='New Supplier' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHMAAAAdCAYAAACZvVPMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALjSURBVGhD7ZQxjlNBEEThYpyHjIMQcgpCTkBITErAhggJAiSQEBJa9Fa8VbnV8/9fbGPzmZJK62n3dFd3jffR46c3t5P74DRzR5xm7ojTzB1xmrkjTjN3xGnmjjjN3BGnmWfmi9dfbsGzl5/vY2/ef7+LvXr77SD3WB6YSUPw7uOPgyRJc/Dk+Yf2+79Jl5RgSV3uJdmZ6R5Prbc1EyAiv4PXYqYvO3XwGYwe4qXYmXkuDn+ZIL+D12Cmpp36X9S5eHEz/VsXtmSmD0Ck+O6XBD99/XkXz5jx0S9spK2jfWu8m4Nce6pLmCO5Tw6f69x1xs7MJYPVLOp/yK6359ZMCnQDdzEIEOE563RnSA2RQxmvQyRF1VH5UDNFxjXWM/Q+SO0uN+8zB8i8LgbplY/YXdDPmL3Jq/eHZnIGWXy0BF9GknjeBWk4PRSfYh00e1SaI7oc+CdmZh5cWminEdQ5wZqZ1vSc8dyvedTIPLhoZm3aDQGIe5be9YxpKYqBYRVLrHscHamZqAOODOrmGOVCH53n7r6sc9YdjmLcQYNnqSf2Wuq9aCZMcYqwEH/XYJ16l5rEqtjRUEu0NsiHdUoz3QFcMxN4VtuamWuw11FmGqOIIiyU35k/IncANfxsHZDx7P8QCs//ipnOveURH2UmdFBFZCGwRQT0V0edXA4LMA46oVtYB1X3Wh4c5UKARs9LC63GV+NGMe5kjxGPNhMCX123hK54JbkaCo0j0PiWgXIJSbV4Hg2+NEfmQRefOxnVdX98b2yrmdYczSZHveFmMy0CaiGRMWpUYQ6BcdnDviAX0ZG7IB8DtHZXN3MxcslM6hvje1AfWO4i4yDvQ3XlLroYdLbURU7OdBIzYddMuqBEreNyQK0h6oAd1VnR6crFA+56P/M1MzWC+mhgLjRRTZfuzX2MzITqSOQD32zm/0yX2H1XubTQS3Ka+ZvTzB1xmrkjTjMnr4rTzB1xmrkb3tz+AgTqz/mgfG8lAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, TextFindAll" Text="New Supplier" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:Click.Target>
+                    </uix:Click>
+                    <uix:Click ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="318.4,117.6" sap2010:WorkflowViewState.IdRef="Click_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+                      <uix:Click.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="1624, 1405, 108, 31" ElementType="Button" FriendlyName="'Save'" FullSelector="&lt;wnd app='iexplore.exe' cls='IEFrame' title='React App - Internet Explorer' /&gt;&lt;wnd aaname='Notification' cls='DirectUIHWND' /&gt;&lt;ctrl automationid='IENotificationBar' /&gt;&lt;ctrl name='Save' role='split button' /&gt;" FuzzySelector="&lt;wnd app='iexplore.exe' cls='IEFrame' title='React App - Internet Explorer' /&gt;&lt;wnd aaname='Notification' cls='DirectUIHWND' /&gt;&lt;ctrl automationid='IENotificationBar' /&gt;&lt;ctrl name='Save' role='split button' automationid='' check:text='Save' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAjCAYAAABM+o4SAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALdSURBVGhD7dRZkpswEIBh+2Wy79tJ8HHgLuBzZJkklpM4yTXEQbyvN+jQzWJB2gpU0WZI6eF7AEkU1m8xgN/vwOkvF7DnBvDrLXBms5lzh3CNkDXg6XRyapLcL3vAn2+Ag4uOx6NTk+R+UUCmEXIBW9JdwNlr4OCiw+Hg1CS5XxSQaYRcwJZ0F/DHK+C4gM2IB2QaIWvA/X7v1CS5X/aA318CxwVsRjwg0whZA+52O6cmyf2yB/z2AjguYDPiAZlGqNOA02AIw6EhmLLz+qC7gNPnwMFF2+1WSAzjURrMvD8djyE2rvtEcr8oINMIdRMwHsNoOIJxzIz1lG2/Sl+ZC7h1OXtA9Qw4ogG3UwiSlw6m3FiGIhs/cnQ+nfTprZzeeDwqzaHrYr38n+Vf+3V+l79x800UkGmErAE3m42YOPLo5b0ovjAeQBTn1zFEXvJjA5VeqwCGXgRxMT8dD1R6Tc82x3H+MABVzG9fnf2qhkPcvCp7wMlT4EgHJHEEXvZDLoUslKKp5AR758D0nDxQZYyUA0uou19N4yEKyDRC1oDr9fo6lJ/+KF+V7uvslBaSgDobUz5G1+d5+dr8WQxfnZ/dtib7he/C3b/EHvDrE+BcNSDSeIqSk6PxWoGPm24EozDstabTVcShgD6ofN6VSO4XBWQaoQF8eQycqwfMolEIilmOQKfMDEjzk+CqMrf0R7ge8YBMI2QNuFqtZOgQPH9SuqdD/Fz6MMnHkwihNubTiQxBG2sm+Bn1PPBCXdzL7xfPIhpCv7y2bZL7ZQ/4+RFwRAOuJuknssTc8DxoNobhJvjJrETAe2ZoQxrxrBq5beIBmUaoo4D/n+4C3j4EDi5aLpdOTZL7RQGZRsgFbEl3AT89AA4uWiwWTk2S+0UBmUbIBWxJdwE/3geOC9iMeECmEbIGnM/nTk2S+2UP+OEecFzAZsQDMo2QNaBzd3CN0ADe34DTXy5gr93AH6cJ7dzkWBOAAAAAAElFTkSuQmCC" InformativeScreenshot="d56e62277a0f6955a407d40f0cfae523.png" SearchSteps="Selector, FuzzySelector, Image, TextFindAll" Text="Save" TextMethod="AttributeText" TextSelector="&lt;ctrl role='split button' /&gt;">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="1732, 1405, 98, 31" ElementType="Button" FriendlyName="'Cancel'" FullSelector="&lt;wnd app='iexplore.exe' cls='IEFrame' title='React App - Internet Explorer' /&gt;&lt;wnd aaname='Notification' cls='DirectUIHWND' /&gt;&lt;ctrl automationid='IENotificationBar' /&gt;&lt;ctrl name='Cancel' role='push button' /&gt;" FuzzySelector="&lt;wnd app='iexplore.exe' cls='IEFrame' title='React App - Internet Explorer' /&gt;&lt;wnd aaname='Notification' cls='DirectUIHWND' /&gt;&lt;ctrl automationid='IENotificationBar' /&gt;&lt;ctrl name='Cancel' role='push button' automationid='' check:text='Cancel' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAAjCAYAAABmSn+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALESURBVGhD7ZVZkpswEIbNy2Tft5PAceAuwDmyTBJEEie5hph7eF9v0FEL8Ai7qzOpcoOrooevbGi1cP0fLY/g9zvwXB5ezIUygl9vgWI8Hnt6gMoeYcXs93uPILyYn2+AApt2u51HECuGyB7xYgaEFzN+DRTYtN1uPYJYMUT2iBczILyYH6+AwouRx4ohskdYMZvNxiMIL+b7S6DwYuSxYojsEVbMer32CMKL+fYCKLwYeawYIntkcDE3eQRBEDgkUBLr+qZMAojyG7J2Lngx5XOgwKbVaiVIBXnUiHDvlwkkpXM9ELWYiqydCyuGyB4ZTEyFkxLlUBG1S2B4MeoZUMiKKSExx9ZfJ6PKIXKPuY7IeuKSsp08JIK8cvoN9gVw9nCf2a11e3sTQ2SPsGKWy6UMKjFBJKComkOVJZBV7XUFWWgCTFT3OggPa5QJMwgzqA79Yfc5VQaZcmrO2uPfhHuFWVXXhODFFE+B4hLEnIB9hzBrMZ3wTPDhYV9VT2UjogvWboXW1Pu163sTQ2SPsGIWi4UMKjZiYlBU7Qht3/r2uKknQtuatkHGylmvUYwJXJvv3DNszdnTod1PxShGn/aeEV7M1ydAISrGDZCqWxTEGNZBhAEDPZsY/sXoTQyRPTKCL4+BQlRME2oQK6LWYEPuhmen565iOPl3eDF6E0Nkj7Bi5vO5IEUzESlo934RQ1yYT53a8FLd3LfX7noNKYrBtW3vUU9hwsXJKJx62qw/qeF+8e1vwXqY6qYmAy/m8yOgkBeD1OF2znlHlE6d/xe8b6T9ixikFtDC1boiehNDZI8MLOb/hhdz/RAosGk2m3kEsWKI7BEvZkB4MZ8eAAU2TadTjyBWDJE94sUMCC/m432g8GLksWKI7BFWzGQy8QjCi/lwDyi8GHmsGCJ7hBXjkYfKHhnB+yvwXB5ezEVyBX8A7wEN+ORerzQAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, TextFindAll" Text="Cancel" TextMethod="AttributeText" TextSelector="&lt;ctrl role='push button' /&gt;" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:Click.Target>
+                    </uix:Click>
+                  </Sequence>
+                </ActivityAction>
+              </ui:GetLastDownloadedFile.Body>
+            </ui:GetLastDownloadedFile>
+          </Sequence>
+        </ActivityAction>
+      </uix:ApplicationCard.Body>
+      <uix:ApplicationCard.TargetApp>
+        <uix:TargetApp BrowserType="IE" IconBase64="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" InformativeScreenshot="d8571a703e39f2d8c5d53bbeed930612.png" Selector="&lt;html title='React App'/&gt;" Url="file://C:\Users\Andrew Hall\Downloads\ui-path-10.02.2020\web\index.html" />
+      </uix:ApplicationCard.TargetApp>
+    </uix:ApplicationCard>
+    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[Excel.Sheet(&quot;Scratchpad&quot;).DataTableOutValue]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[Saved.Values(Of FileInfo)(&quot;Downloaded suppliers CSV&quot;).FullName]" sap:VirtualizedContainerService.HintSize="459.2,156" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+  </ueab:SequenceX>
+</Activity>
