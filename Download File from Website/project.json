@@ -1,18 +1,18 @@
 {
   "name": "Download File from Website",
-  "description": "Download a file from a website",
+  "description": "Download CSV file from a website and convert to Excel",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.ComplexScenarios.Activities": "[1.0.1-beta.793757]",
-    "UiPath.Excel.Activities": "[2.8.2-beta.798242]",
-    "UiPath.Mail.Activities": "[1.8.2-beta.798987]",
-    "UiPath.System.Activities": "[20.3.0-beta.798912]",
-    "UiPath.UIAutomationNext.Activities": "[2.1.0-alpha.799093]",
-    "UiPath.Word.Activities": "[1.4.1-beta.793747]"
+    "UiPath.ComplexScenarios.Activities": "[1.0.2-beta.844296]",
+    "UiPath.Excel.Activities": "[2.8.3-beta.844421]",
+    "UiPath.Mail.Activities": "[1.8.3-beta.844298]",
+    "UiPath.System.Activities": "[20.4.0-beta.843185]",
+    "UiPath.UIAutomationNext.Activities": "[20.4.0-beta.845911]",
+    "UiPath.Word.Activities": "[1.4.2-beta.844297]"
   },
   "webServices": [],
   "schemaVersion": "4.0",
-  "studioVersion": "20.3.0.187",
+  "studioVersion": "20.4.0.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
