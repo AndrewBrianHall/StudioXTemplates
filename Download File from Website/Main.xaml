@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="530,1723" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="530,1955" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
       <x:String>System.Activities</x:String>
@@ -57,7 +57,7 @@
       <AssemblyReference>UiPath.Word</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="540,1658" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="540,1890" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=True,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
       <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
@@ -67,19 +67,26 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard CloseMode="{x:Null}" OpenMode="{x:Null}" sap2010:Annotation.AnnotationText="Configured to open Internet Explorer to a website from which the file will be downloaded. To change the target, click the ☰ icon and choose &quot;Indicate Target&quot;; you can click any desktop application or web browser." DisplayName="Use Browser IE: UiPath Demo App" sap:VirtualizedContainerService.HintSize="498,1213" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
+    <uix:NApplicationCard CloseMode="{x:Null}" OpenMode="{x:Null}" sap2010:Annotation.AnnotationText="This template is fully functional, click &quot;Run&quot; (or press F5) to try it.&#xD;&#xA;&#xD;&#xA;This &quot;Use Application/Browser&quot; activity is configured to open Internet Explorer to a website from which the file will be downloaded. To change the target, click the ☰ icon and choose &quot;Indicate Target&quot;; you can click any desktop application or web browser." DisplayName="Use Browser IE: UiPath Demo App" sap:VirtualizedContainerService.HintSize="498,1445" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="460,939" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="460,1126" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetLastDownloadedFile Timeout="{x:Null}" sap2010:Annotation.AnnotationText="Monitors the folder indicated in the &quot;Downloads folder&quot; property for the new file to be added.&#xD;&#xA;&#xD;&#xA;When the file finishes downloading, it uses the &quot;Save for Later Use&quot; to save the file information so it can be used in a later activity." DisplayName="Download File" DownloadFolder="[string.Format(&quot;{0}\Downloads&quot;, Environment.GetFolderPath(Environment.SpecialFolder.UserProfile))]" File="[Saved.Values(Of FileInfo)(&quot;Saved 'Downloaded CSV file'&quot;)]" sap:VirtualizedContainerService.HintSize="418,849" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+            <uix:NNavigateBrowser Action="Refresh" sap2010:Annotation.AnnotationText="Uses the &quot;Navigate Browser&quot; activity to refresh this browser. This makes sure the website is in the default state." DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="418,147" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NNavigateBrowser>
+            <ui:GetLastDownloadedFile Timeout="{x:Null}" sap2010:Annotation.AnnotationText="Monitors the folder indicated in the &quot;Downloads folder&quot; property for the new file to be added.&#xA;&#xA;When the file finishes downloading, it uses the &quot;Save for Later Use&quot; to save the file information so it can be used in a later activity." DisplayName="Download File" DownloadFolder="[string.Format(&quot;{0}\Downloads&quot;, Environment.GetFolderPath(Environment.SpecialFolder.UserProfile))]" File="[Saved.Values(Of FileInfo)(&quot;Saved 'Downloaded CSV file'&quot;)]" sap:VirtualizedContainerService.HintSize="418,849" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
               <ui:GetLastDownloadedFile.Body>
                 <ActivityAction>
                   <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,554" sap2010:WorkflowViewState.IdRef="Sequence_1">
