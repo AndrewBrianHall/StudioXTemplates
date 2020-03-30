@@ -65,7 +65,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard CloseMode="{x:Null}" OpenMode="{x:Null}" sap2010:Annotation.AnnotationText="This sample is fully functional. To run it, click &quot;Run&quot; on the ribbon.&#xA;&#xA;This automation opens Internet Explorer to a website for entering data, but you can work automate any browser or desktop application's UI. To change the target click the ☰ icon and choose &quot;Indicate Target&quot;. &#xD;&#xA;&#xD;&#xA;Note browsers other than IE require the browser's extension to be installed, see https://docs.uipath.com/studio/docs/about-extensions." DisplayName="Use Browser IE: UiPath Demo App" sap:VirtualizedContainerService.HintSize="558,2157" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
+    <uix:NApplicationCard CloseMode="{x:Null}" OpenMode="{x:Null}" sap2010:Annotation.AnnotationText="This is a fully functional template. Click &quot;Run&quot; (or press F5) to try it.&#xA;&#xA;This automation opens Internet Explorer to a website for entering data, but you can work automate any browser or desktop application's UI. To change the target click the ☰ icon and choose &quot;Indicate Target&quot;. &#xA;&#xA;Note browsers other than IE require the browser's extension to be installed, see https://docs.uipath.com/studio/docs/about-extensions." DisplayName="Use Browser IE: UiPath Demo App" sap:VirtualizedContainerService.HintSize="558,2157" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
