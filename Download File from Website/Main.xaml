@@ -67,7 +67,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard CloseMode="{x:Null}" OpenMode="{x:Null}" sap2010:Annotation.AnnotationText="This template is fully functional, click &quot;Run&quot; (or press F5) to try it.&#xD;&#xA;&#xD;&#xA;This &quot;Use Application/Browser&quot; activity is configured to open Internet Explorer to a website from which the file will be downloaded. To change the target, click the ☰ icon and choose &quot;Indicate Target&quot;; you can click any desktop application or web browser." DisplayName="Use Browser IE: UiPath Demo App" sap:VirtualizedContainerService.HintSize="498,1445" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
+    <uix:NApplicationCard CloseMode="{x:Null}" OpenMode="{x:Null}" sap2010:Annotation.AnnotationText="This template is fully functional, click &quot;Run&quot; (or press F5) to try it.&#xA;&#xA;This &quot;Use Application/Browser&quot; activity is configured to open Internet Explorer to a website from which the file will be downloaded. To change the target, click the ☰ icon and choose &quot;Indicate Target&quot;; you can click any desktop application or web browser." DisplayName="Use Browser IE: UiPath Demo App" sap:VirtualizedContainerService.HintSize="498,1445" sap2010:WorkflowViewState.IdRef="NApplicationCard_1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -86,7 +86,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NNavigateBrowser>
-            <ui:GetLastDownloadedFile Timeout="{x:Null}" sap2010:Annotation.AnnotationText="Monitors the folder indicated in the &quot;Downloads folder&quot; property for the new file to be added.&#xA;&#xA;When the file finishes downloading, it uses the &quot;Save for Later Use&quot; to save the file information so it can be used in a later activity." DisplayName="Download File" DownloadFolder="[string.Format(&quot;{0}\Downloads&quot;, Environment.GetFolderPath(Environment.SpecialFolder.UserProfile))]" File="[Saved.Values(Of FileInfo)(&quot;Saved 'Downloaded CSV file'&quot;)]" sap:VirtualizedContainerService.HintSize="418,849" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+            <ui:GetLastDownloadedFile Timeout="{x:Null}" sap2010:Annotation.AnnotationText="Monitors the folder indicated in the &quot;Downloads folder&quot; property for the new file to be added.&#xA;&#xA;When the file finishes downloading, it uses the &quot;Save for Later Use&quot; to save the file information so it can be used in a later activity." DisplayName="Download File" DownloadFolder="[string.Format(&quot;{0}\Downloads&quot;, Environment.GetFolderPath(Environment.SpecialFolder.UserProfile))]" File="[Saved.Values(Of FileInfo)(&quot;Downloaded file&quot;)]" sap:VirtualizedContainerService.HintSize="418,849" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
               <ui:GetLastDownloadedFile.Body>
                 <ActivityAction>
                   <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,554" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -148,7 +148,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:ReadCsvFile Encoding="{x:Null}" sap2010:Annotation.AnnotationText="Opens the downloaded CSV file using the saved value's FullName property.  The saved value is accessed using the &quot;Use Saved Value&quot; menu entry available under the &quot;+&quot; menu.  It reads the results from the CSV file, and writes the contents to the &quot;Scratchpad&quot; sheet of the project's &quot;Project Notebook&quot; Excel file.&#xA;&#xA;To see the output, click &quot;Project Notebook&quot; on the toolbar." DataTable="[Notes.Sheet(&quot;Scratchpad&quot;).DataTableOutValue]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[Saved.Values(Of FileInfo)(&quot;Saved 'Downloaded CSV file'&quot;).FullName]" sap:VirtualizedContainerService.HintSize="498,315" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
+    <ui:ReadCsvFile Encoding="{x:Null}" sap2010:Annotation.AnnotationText="Opens the downloaded CSV file using the saved value's FullName property.  The saved value is accessed using the &quot;Use Saved Value&quot; menu entry available under the &quot;+&quot; menu.  It reads the results from the CSV file, and writes the contents to the &quot;Scratchpad&quot; sheet of the project's &quot;Project Notebook&quot; Excel file.&#xA;&#xA;To see the output, click &quot;Project Notebook&quot; on the toolbar." DataTable="[Notes.Sheet(&quot;Scratchpad&quot;).DataTableOutValue]" Delimitator="Comma" DisplayName="Read CSV" FilePath="[Saved.Values(Of FileInfo)(&quot;Downloaded file&quot;).FullName]" sap:VirtualizedContainerService.HintSize="498,315" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
