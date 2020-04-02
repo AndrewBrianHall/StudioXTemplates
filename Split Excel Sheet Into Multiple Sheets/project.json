@@ -3,11 +3,11 @@
   "description": "Copies rows from an Excel sheet into different sheets based on values in the row",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.ComplexScenarios.Activities": "[1.0.2-beta.844296]",
-    "UiPath.Excel.Activities": "[2.8.3-beta.844421]",
-    "UiPath.Mail.Activities": "[1.8.3-beta.844298]",
-    "UiPath.System.Activities": "[20.4.0-beta.846721]",
-    "UiPath.UIAutomationNext.Activities": "[20.4.0-beta.846857]",
+    "UiPath.ComplexScenarios.Activities": "[1.0.2-beta.855408]",
+    "UiPath.Excel.Activities": "[2.8.3-beta.853252]",
+    "UiPath.Mail.Activities": "[1.8.3-beta.856089]",
+    "UiPath.System.Activities": "[20.4.0-beta.850545]",
+    "UiPath.UIAutomationNext.Activities": "[20.4.0-beta.856391]",
     "UiPath.Word.Activities": "[1.5.0-beta.746347]"
   },
   "webServices": [],
