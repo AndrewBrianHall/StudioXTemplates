@@ -3,12 +3,12 @@
   "description": "Download CSV file from a website and convert to Excel",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.ComplexScenarios.Activities": "[1.0.2-beta.844296]",
-    "UiPath.Excel.Activities": "[2.8.3-beta.844421]",
-    "UiPath.Mail.Activities": "[1.8.3-beta.844298]",
-    "UiPath.System.Activities": "[20.4.0-beta.843185]",
-    "UiPath.UIAutomationNext.Activities": "[20.4.0-beta.845911]",
-    "UiPath.Word.Activities": "[1.4.2-beta.844297]"
+    "UiPath.ComplexScenarios.Activities": "[1.0.2-beta.861594]",
+    "UiPath.Excel.Activities": "[2.8.3-beta.862693]",
+    "UiPath.Mail.Activities": "[1.8.3-beta.862221]",
+    "UiPath.System.Activities": "[20.4.0-beta.862979]",
+    "UiPath.UIAutomationNext.Activities": "[20.5.0-alpha.851257]",
+    "UiPath.Word.Activities": "[1.5.0-beta.746347]"
   },
   "webServices": [],
   "schemaVersion": "4.0",
