@@ -3,16 +3,16 @@
   "description": "Enter the contents of an Excel range into a website repeating for each row",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.ComplexScenarios.Activities": "[1.0.2-beta.844296]",
-    "UiPath.Excel.Activities": "[2.8.3-beta.844421]",
-    "UiPath.Mail.Activities": "[1.8.3-beta.844298]",
-    "UiPath.System.Activities": "[20.4.0-beta.846721]",
-    "UiPath.UIAutomationNext.Activities": "[20.4.0-beta.846857]",
-    "UiPath.Word.Activities": "[1.5.0-beta.746347]"
+    "UiPath.ComplexScenarios.Activities": "[1.0.2]",
+    "UiPath.Excel.Activities": "[2.8.5]",
+    "UiPath.Mail.Activities": "[1.8.5]",
+    "UiPath.System.Activities": "[20.4.0]",
+    "UiPath.UIAutomationNext.Activities": "[20.4.1]",
+    "UiPath.Word.Activities": "[1.4.2]"
   },
   "webServices": [],
   "schemaVersion": "4.0",
-  "studioVersion": "20.4.0.0",
+  "studioVersion": "20.5.0.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
