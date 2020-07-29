@@ -3,14 +3,15 @@
   "description": "Creates a copy of a word file for each recipient in an Excel sheet and emails it to them",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.ComplexScenarios.Activities": "[1.0.2-beta.844296]",
-    "UiPath.Excel.Activities": "[2.8.3-beta.844421]",
-    "UiPath.Mail.Activities": "[1.8.3-beta.844298]",
-    "UiPath.System.Activities": "[20.4.0-beta.846721]",
-    "UiPath.UIAutomationNext.Activities": "[20.4.0-beta.846857]",
-    "UiPath.Word.Activities": "[1.5.0-beta.746347]"
+    "UiPath.ComplexScenarios.Activities": "[1.1.1-alpha.1027372]",
+    "UiPath.Excel.Activities": "[2.9.1-alpha.1062156]",
+    "UiPath.Mail.Activities": "[1.9.1-alpha.1064573]",
+    "UiPath.System.Activities": "[20.8.0-alpha.1064530]",
+    "UiPath.UIAutomation.Activities": "[20.8.0-beta.1064504]",
+    "UiPath.Word.Activities": "[1.5.1-alpha.1059668]"
   },
   "webServices": [],
+  "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.2.0.44",
   "projectVersion": "1.0.0",
@@ -35,5 +36,6 @@
     },
     "fileInfoCollection": []
   },
-  "expressionLanguage": "VisualBasic"
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false
 }
