@@ -1,0 +1,48 @@
+{
+  "name": "Create PowerPoint Presentation from Data Scraping",
+  "description": "Scrape data from a website and use it to create a PowerPoint presentation",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.ComplexScenarios.Activities": "[1.1.2-beta.1120560]",
+    "UiPath.Excel.Activities": "[2.9.2-beta.1125386]",
+    "UiPath.Mail.Activities": "[1.9.2-beta.1121980]",
+    "UiPath.Presentations.Activities": "[0.1.2-beta.1124367]",
+    "UiPath.System.Activities": "[20.10.0-alpha.1124432]",
+    "UiPath.UIAutomation.Activities": "[20.10.0-beta.1124576]",
+    "UiPath.Word.Activities": "[1.5.2-beta.1122847]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.10.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
+  },
+  "designOptions": {
+    "projectProfile": "Business",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false
+}
