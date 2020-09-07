@@ -26,6 +26,7 @@
       <x:String>UiPath.Word</x:String>
       <x:String>System.Windows.Markup</x:String>
       <x:String>UiPath.Mail</x:String>
+	  <x:String>UiPath.Presentations</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -51,11 +52,13 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
+	  <AssemblyReference>UiPath.Presentations</AssemblyReference>
+	  <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <ueab:SequenceX sap:VirtualizedContainerService.HintSize="580,1033" sap2010:WorkflowViewState.IdRef="SequenceX_1">
     <ueab:SequenceX.Variables>
-      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=True,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
       <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
     </ueab:SequenceX.Variables>
     <sap:WorkflowViewStateService.ViewState>

@@ -1,18 +1,20 @@
 {
-  "name": "Split Excel Sheet into Multiple Sheets",
-  "description": "Copies rows from an Excel sheet into different sheets based on values in the row",
+  "name": "Split Excel Sheet Into Multiple Sheets",
+  "description": "Copies rows from an Excel spreadsheet into different sheets depending on the data type in each row",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.ComplexScenarios.Activities": "[1.0.2-beta.855408]",
-    "UiPath.Excel.Activities": "[2.8.3-beta.853252]",
-    "UiPath.Mail.Activities": "[1.8.3-beta.856089]",
-    "UiPath.System.Activities": "[20.4.0-beta.850545]",
-    "UiPath.UIAutomationNext.Activities": "[20.4.0-beta.856391]",
-    "UiPath.Word.Activities": "[1.5.0-beta.746347]"
+    "UiPath.ComplexScenarios.Activities": "[1.1.2-beta.1120560]",
+    "UiPath.Excel.Activities": "[2.9.2-beta.1125386]",
+    "UiPath.Mail.Activities": "[1.9.2-beta.1121980]",
+    "UiPath.Presentations.Activities": "[0.1.2-beta.1124367]",
+    "UiPath.System.Activities": "[20.10.0-alpha.1124432]",
+    "UiPath.UIAutomation.Activities": "[20.10.0-beta.1124576]",
+    "UiPath.Word.Activities": "[1.5.2-beta.1122847]"
   },
   "webServices": [],
+  "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "20.2.0.44",
+  "studioVersion": "20.10.0.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
@@ -24,7 +26,9 @@
       "Private:*",
       "*password*"
     ],
-    "executionType": "Workflow"
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
   },
   "designOptions": {
     "projectProfile": "Business",
@@ -33,7 +37,12 @@
       "includeOriginalXaml": false,
       "privateWorkflows": []
     },
-    "fileInfoCollection": []
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
   },
-  "expressionLanguage": "VisualBasic"
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false
 }

@@ -1,19 +1,20 @@
 {
   "name": "Complete Word Template from Excel and Email",
-  "description": "Creates a copy of a word file for each recipient in an Excel sheet and emails it to them",
+  "description": "Replaces placeholder text in a word document with values from an Excel range and sends as an email attachment",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.ComplexScenarios.Activities": "[1.1.1-alpha.1027372]",
-    "UiPath.Excel.Activities": "[2.9.1-alpha.1062156]",
-    "UiPath.Mail.Activities": "[1.9.1-alpha.1064573]",
-    "UiPath.System.Activities": "[20.8.0-alpha.1064530]",
-    "UiPath.UIAutomation.Activities": "[20.8.0-beta.1064504]",
-    "UiPath.Word.Activities": "[1.5.1-alpha.1059668]"
+    "UiPath.ComplexScenarios.Activities": "[1.1.2-beta.1120560]",
+    "UiPath.Excel.Activities": "[2.9.2-beta.1125386]",
+    "UiPath.Mail.Activities": "[1.9.2-beta.1121980]",
+    "UiPath.Presentations.Activities": "[0.1.2-beta.1124367]",
+    "UiPath.System.Activities": "[20.10.0-alpha.1124432]",
+    "UiPath.UIAutomation.Activities": "[20.10.0-beta.1124576]",
+    "UiPath.Word.Activities": "[1.5.2-beta.1122847]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "20.2.0.44",
+  "studioVersion": "20.10.0.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
@@ -25,7 +26,9 @@
       "Private:*",
       "*password*"
     ],
-    "executionType": "Workflow"
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
   },
   "designOptions": {
     "projectProfile": "Business",
@@ -34,7 +37,11 @@
       "includeOriginalXaml": false,
       "privateWorkflows": []
     },
-    "fileInfoCollection": []
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
   "isTemplate": false

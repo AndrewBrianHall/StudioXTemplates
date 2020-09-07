@@ -18,6 +18,7 @@
 		}
 		div#header {
 			min-height: 80pt;
+			max-height: 290pt;
 			margin: 16pt;
 			margin-top: 8pt;
 		}
@@ -237,6 +238,19 @@
 			[ERRORPATH_CONTAINER_VIS_PLACEHOLDER]
 		}
 
+		.scrollable
+		{
+			overflow-y: auto;
+		}
+
+		.unscrollable
+		{
+			overflow: hidden;
+		}
+
+		#problem-desc {
+				white-space: pre; 
+		}
 
 	</style>
 
@@ -268,14 +282,15 @@
     </script>
 </head>
 
-<body>
-	<div id="header">
+<body class="unscrollable">
+	<div class="scrollable" id="header">
 		<img id="warning" src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAA+BJREFUeAHtm79u1DAcx3/OHRsLS0GiVREgwYBAQogBRpDQDYzwCHCFFyhi6VK1L1CoeAQ6MnSBsQwMsIDEwJ9WvQEY6ANwF+NvrhF27FycxIkTmp90F9tx7N/3E9+dHf+OqLOOQEfgKBNgzsUv7d0jzu8SpxtE/Jyb9tlXYvSWGHtFzxe33LQ5bcUdgEf752ky2RSib7l0UG+LvaFeb0jPFr7o5/KXuAHwePcqTei1uPMn8rtQ4ArGDqhHt2njzPsCVyuXlAdQt/jYfUcQygFIE8/oJbH+Kp2c/0grLIx9LnRc4QH9HF0iPn4qvlfuK204gFAcQKr4YJ02F58ojrrKDPfWiIfLSnOMfhELLoovxwOl3DITWNZTq/kQDw8AlgnAsnGao5CuyUV50vkB+BIfqwKEIFiLs0TsNx0/9uFfPl8q30fAt3hZ29LuQIi/LIq2xPD/Jp/Kk7YH0CTxeRRm1LUD0BbxD0dXiMbrYtY4ph5bpo3FTxn6RdUsa4t46Bh+/yx+Ki9Ekix/Imd/CbZJ/FT16eiAN8xKMTuFhhmWDqB14iPVq4pWCwjmjwAWNuHknTa3x2+wo0nOeHBqwMPwBRxmQfCgv/1jW3G+aMY4WRJrh6B33bSAMo8ArOqSCxuH4qEN4jmn+eh1CKKoZuU642QJHwesVHXTAWA9n1zSOhYPNyA8dkdOx2WljiYI0BRpU1vWAeBhhmxY2Dga9nKzlacjCMJ32ZLaxDkdANFN+ZpoVacUtCiDFalqqjZxTgfA+VnlGixp22pJ35PajACSYsuu55Pt1Zm38F0fAXU62IC+OgANuAleXehGgFf8Dei8GwENuAleXehGgFf8Dei8GwENuAleXfA2AhijUaxcTsdldR39ARCPwSA8eol0XYKT/fSTBXXlD58BLtTVX1o/3kZAmkN1l2cDwP58W83Cd10cY+pGI4IT2mqa7yLYKmE6AKIdpQ4iMyow7Av8uTO3jxfSFXQhHj0nfEekWcJ0AAhFkw1hKdhscGyV7QvEfkYbJFpIjapN1NUBRHF4IhRNNoSlVABB7sJp2rQ7REKTIcZQBwBPEIeH3VXZHEPAdlgl8wCT+GinWGgymHlvEBXbuDmaKj49pjAdQNsgFBAPibMBtAVCQfF2AJoOoYR4ewBNhVBSfD4ATYPgQHx+AE2B4Eh8MQC+ITgUXxyALwiOxZcDMBPCUQiXBwBY2oxxera6d8tAyCwHsidCWS3gfN0QHImH6+bFEM7kMfx3B3F4WHFVbqIP9OXg/0Jw1c0IkEXHf5tDsJUhJkeuap2ePqXaqeJvc9Y+dBU7Ah2B/5LAX/vC6lHCoAxXAAAAAElFTkSuQmCC"/>
+
 		<div style="width: 80%; float:left; margin-left: 12pt;">
 			<p>
 				[LOCALIZATION_PLACEHOLDER_LINE1]
 				<br>[LOCALIZATION_PLACEHOLDER_LINE2]
-				<br><br><strong><i>[PROBLEMDESC_PLACEHOLDER]</i></strong>
+				<br><br><strong><i id="problem-desc">[PROBLEMDESC_PLACEHOLDER]</i></strong>
 				<div id="ErrorPathContainer"><br><br>[LOCALIZATION_PLACEHOLDER_LINE4] </div>
 				<div id="ErrorPathContainer"><br><strong>[ERRORPATH_PLACEHOLDER].</strong></div>
 			</p>

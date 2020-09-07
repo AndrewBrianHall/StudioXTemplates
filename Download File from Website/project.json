@@ -1,18 +1,20 @@
 {
-  "name": "Download File from Website",
-  "description": "Download CSV file from a website and convert to Excel",
+  "name": "Download and Convert File from Website",
+  "description": "Navigates the browser, downloads a .csv file, and converts it to Excel.",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.ComplexScenarios.Activities": "[1.0.2-beta.861594]",
-    "UiPath.Excel.Activities": "[2.8.3-beta.862693]",
-    "UiPath.Mail.Activities": "[1.8.3-beta.862221]",
-    "UiPath.System.Activities": "[20.4.0-beta.862979]",
-    "UiPath.UIAutomationNext.Activities": "[20.5.0-alpha.851257]",
-    "UiPath.Word.Activities": "[1.5.0-beta.746347]"
+    "UiPath.ComplexScenarios.Activities": "[1.1.2-beta.1120560]",
+    "UiPath.Excel.Activities": "[2.9.2-beta.1125386]",
+    "UiPath.Mail.Activities": "[1.9.2-beta.1121980]",
+    "UiPath.Presentations.Activities": "[0.1.2-beta.1124367]",
+    "UiPath.System.Activities": "[20.10.0-alpha.1124432]",
+    "UiPath.UIAutomation.Activities": "[20.10.0-beta.1124576]",
+    "UiPath.Word.Activities": "[1.5.2-beta.1122847]"
   },
   "webServices": [],
+  "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "20.4.0.0",
+  "studioVersion": "20.10.0.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
@@ -24,7 +26,9 @@
       "Private:*",
       "*password*"
     ],
-    "executionType": "Workflow"
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
   },
   "designOptions": {
     "projectProfile": "Business",
@@ -33,7 +37,12 @@
       "includeOriginalXaml": false,
       "privateWorkflows": []
     },
-    "fileInfoCollection": []
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
   },
-  "expressionLanguage": "VisualBasic"
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false
 }
